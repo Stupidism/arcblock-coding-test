@@ -14,6 +14,8 @@ module.exports = {
   },
   rules: {
     // Add any project-specific rules here
+    // This rule is not helpful for component folders with `export * ` statements
+    'import/prefer-default-export': 'off',
   },
   settings: {
     'import/resolver': {
