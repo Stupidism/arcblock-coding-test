@@ -7,9 +7,9 @@ const Input = styled('input')({
 });
 
 interface ImageUploaderProps {
-  value: string | undefined;
-  onChange: ((imageUrl: string) => void) | undefined;
-  children: React.ReactNode;
+  value?: string;
+  onChange?: (imageUrl: string) => void;
+  children?: React.ReactNode;
 }
 
 /** Simulate async state of an api call, convert the file into a blob data image */

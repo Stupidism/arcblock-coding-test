@@ -16,6 +16,8 @@ module.exports = {
     // Add any project-specific rules here
     // This rule is not helpful for component folders with `export * ` statements
     'import/prefer-default-export': 'off',
+    // This rule is not necessary with typescript enabled
+    'react/require-default-props': 'off',
   },
   settings: {
     'import/resolver': {

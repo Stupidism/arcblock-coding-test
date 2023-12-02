@@ -43,14 +43,12 @@ export function ProfileEdit() {
 
   return (
     <Container component="form" onSubmit={handleSubmit(onSubmit)}>
-      <Stack direction={{ xs: 'column', sm: 'row' }} alignItems="center" gap={3} paddingY={4}>
+      <Stack direction={{ xs: 'column', sm: 'row' }} gap={3} paddingY={4}>
         <Card sx={{ width: '100%' }}>
           <CardContent>
             <Stack direction={{ xs: 'column', sm: 'row' }} alignItems="center" gap={3}>
               <Avatar src={watchAvatar} sx={{ bgcolor: red[500], width: 120, height: 120 }} aria-label="recipe" />
-              <ImageUploader name="avatar" onChange={(imageUrl) => setValue('avatar', imageUrl)}>
-                Change Avatar
-              </ImageUploader>
+              <ImageUploader onChange={(imageUrl) => setValue('avatar', imageUrl)}>Change Avatar</ImageUploader>
             </Stack>
           </CardContent>
         </Card>
